@@ -1,4 +1,4 @@
-package hello;
+package hello.start;
 
 public class Greeter {
     public String sayHello() {

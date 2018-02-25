@@ -1,5 +1,6 @@
-package hello;
+package hello.start;
 
+import hello.start.Greeter;
 import org.joda.time.LocalTime;
 
 public class HelloWorld {
