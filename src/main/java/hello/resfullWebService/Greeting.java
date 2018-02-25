@@ -1,4 +1,4 @@
-package hello.ResfullWebService;
+package hello.resfullWebService;
 
 public class Greeting {
     private final long id;
