@@ -6,11 +6,17 @@
 
     <!-- services -->
 
-    <bean id = "petStore" class="springFramework.core.PetStoreServiceImpl">
-    </bean>
+    <bean id = "petStore" class="springFramework.core.PetStoreServiceImpl"/>
+    <alias name="petStore" alias="pet"/>
 
+    <bean id = "sample"
+          class="springFramework.core.SampleClass"
+          factory-method="createSampleClass"/>
 
-    <alias name="petStore" alias="pet"></alias>
+    <bean id = "noStaticSample"
+          factory-bean = "sample"
+          factory-method="createSampleClassNotStatic"/>
+
 
 
 </beans>
