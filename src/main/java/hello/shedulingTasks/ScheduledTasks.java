@@ -11,12 +11,12 @@ import java.util.Date;
 @Component
 public class ScheduledTasks {
 
-    private static final Logger log = LoggerFactory.getLogger(ScheduledTasks.class);
-    private static final SimpleDateFormat dateFromat = new SimpleDateFormat("HH:mm:ss");
-
-    @Scheduled(fixRate = 5000)
-    public void restfullCurrentTime(){
-        log.info("The time is now{}", dateFromat.format(new Date()));
-    }
+//    private static final Logger log = LoggerFactory.getLogger(ScheduledTasks.class);
+//    private static final SimpleDateFormat dateFromat = new SimpleDateFormat("HH:mm:ss");
+//
+//    @Scheduled(fixRate = 5000)
+//    public void restfullCurrentTime(){
+//        log.info("The time is now{}", dateFromat.format(new Date()));
+//    }
 
 }
