@@ -10,13 +10,13 @@ public class Core {
 
 
     public static void main (String [] args){
-        start2();
+        start1();
 
     }
 
     public static void start1(){
         ApplicationContext context = new ClassPathXmlApplicationContext("Spring/services.xml");
-        PetStoreServiceImpl petStoreService = context.getBean("petStore",PetStoreServiceImpl.class);
+        PetStoreServiceImpl petStoreService = context.getBean("pet",PetStoreServiceImpl.class);
         System.out.println(petStoreService.text);
     }
 

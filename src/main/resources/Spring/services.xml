@@ -10,4 +10,7 @@
     </bean>
 
 
+    <alias name="petStore" alias="pet"></alias>
+
+
 </beans>
