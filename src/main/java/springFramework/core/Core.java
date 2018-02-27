@@ -8,10 +8,20 @@ import org.springframework.context.support.GenericApplicationContext;
 
 public class Core {
 
+    static int counter = 1;
+
     public static void main (String [] args){
         start5();
 
     }
+
+    public static void start6(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("Spring/services.xml");
+        SampleClass sample = context.getBean("sample",SampleClass.class);
+        System.out.println(sample.getText());
+        sample.setNumber(10);
+    }
+
 
     public static void start5(){
         ApplicationContext context = new ClassPathXmlApplicationContext("Spring/services.xml");

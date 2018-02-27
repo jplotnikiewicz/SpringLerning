@@ -3,7 +3,7 @@ package springFramework.core;
 public class SampleClass {
 
     String text = "sample text2";
-    String number = "987";
+    int number = 987;
 
     public String getText() {
         return text;
@@ -13,11 +13,11 @@ public class SampleClass {
         this.text = text;
     }
 
-    public String getNumber() {
+    public int getNumber() {
         return number;
     }
 
-    public void setNumber(String number) {
+    public void setNumber(int number) {
         this.number = number;
     }
 
