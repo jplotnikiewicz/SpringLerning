@@ -18,5 +18,12 @@
           factory-method="createSampleClassNotStatic"/>
 
 
+    <bean id = "sample2" class="springFramework.core.SmapleClass2">
+        <constructor-arg ref="sample"/>
+        <constructor-arg type="int" value="123"/>
+        <constructor-arg index="2" value="some minor tests"/>
+        <constructor-arg name="decimal" value="3.12"/>
+    </bean>
+
 
 </beans>

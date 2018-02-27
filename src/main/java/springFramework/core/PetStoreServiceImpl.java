@@ -7,7 +7,7 @@ public class PetStoreServiceImpl {
 
     public PetStoreServiceImpl(){
         number = 123;
-        text = "jada chlopcy jada";
+        text = "test pet store";
     }
 
     public int getNumber() {
