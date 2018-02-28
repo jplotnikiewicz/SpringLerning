@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
@@ -24,6 +25,21 @@
         <constructor-arg index="2" value="some minor tests"/>
         <constructor-arg name="decimal" value="3.12"/>
     </bean>
+
+    <bean id = "sample22" class="springFramework.core.SmapleClass2">
+        <property name="sampleClass" ref="sample"/>
+        <property name="text" value="set created bean"/>
+    </bean>
+
+    <bean id = "sample222" class="springFramework.core.SmapleClass2"
+          p:text= " set created bean">
+        <property name="sampleClass" ref="sample"/>
+    </bean>
+
+
+
+
+
 
 
 </beans>

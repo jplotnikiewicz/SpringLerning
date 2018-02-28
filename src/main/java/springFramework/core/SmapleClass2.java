@@ -1,6 +1,5 @@
 package springFramework.core;
 
-import jdk.nashorn.internal.objects.annotations.Constructor;
 
 import java.beans.ConstructorProperties;
 

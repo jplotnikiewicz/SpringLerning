@@ -11,15 +11,15 @@ public class Core {
     static int counter = 1;
 
     public static void main (String [] args){
-        start5();
+        start6();
 
     }
 
     public static void start6(){
         ApplicationContext context = new ClassPathXmlApplicationContext("Spring/services.xml");
-        SampleClass sample = context.getBean("sample",SampleClass.class);
+        SmapleClass2 sample = context.getBean("sample22",SmapleClass2.class);
         System.out.println(sample.getText());
-        sample.setNumber(10);
+        System.out.println(sample.sampleClass.getText());
     }
 
 
