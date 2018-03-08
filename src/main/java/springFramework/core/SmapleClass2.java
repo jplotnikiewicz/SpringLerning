@@ -1,9 +1,13 @@
 package springFramework.core;
 
 
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+
 import java.beans.ConstructorProperties;
 
-public class SmapleClass2 {
+public class SmapleClass2 implements ApplicationContextAware {
 
     SampleClass sampleClass;
     int number;
@@ -54,5 +58,10 @@ public class SmapleClass2 {
 
     public void setDecimal(float decimal) {
         this.decimal = decimal;
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+
     }
 }

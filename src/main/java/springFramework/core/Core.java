@@ -24,6 +24,7 @@ public class Core {
     public static void start6(){
         ApplicationContext context = new ClassPathXmlApplicationContext("Spring/Core/services.xml");
         SmapleClass2 sample = context.getBean("sample22",SmapleClass2.class);
+
         System.out.println(sample.getText());
         System.out.println(sample.sampleClass.getText());
     }
